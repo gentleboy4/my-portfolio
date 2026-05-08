@@ -1,42 +1,119 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Williams Amaechi | Developer</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-    <div class="navbar">
-        <h2> Williams</h2>
-        <div>
-            <a href="#">Home</a>
-            <a href="#">Projects</a>
-            <a href="#">Contacts</a>
-        </div>
+
+  <!-- NAVBAR -->
+  <header>
+    <nav>
+      <h1 class="logo">Williams.dev</h1>
+
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Hello, I'm</h2>
+      <h1>Williams Amaechi</h1>
+      <h3 id="greeting"></h3>
+      <p id=""typing"></p>
+      <p>
+        Web Developer • Python Programmer • Game Developer
+      </p>
+
+      <a href="#projects" class="btn">View Projects</a>
     </div>
+  </section>
 
-    <hr>
-    <h2> About me </h2>
-    <p> I build python games and now I'm learning web development. </p>
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <h2>About Me</h2>
 
-    <h2> My Projects </h2>
+    <p>
+      I am a developer passionate about building websites,
+      games, and applications using HTML, CSS, JavaScript,
+      and Python.
+    </p>
 
-    <div class="projects">
-        <div class="card">
-            <h3> Rock Paper Scissors </h3>
-            <p> A python GUI game with sound effects. </p>
-        </div>
-        <div class="card">
-            <h3> Snake game </h3>
-            <p> A classic snake game with levels and scores. </p>
-        </div>
+    <p>
+      I enjoy creating interactive projects and continuously
+      improving my programming skills.
+    </p>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section">
+    <h2>Skills</h2>
+
+    <div class="skills-container">
+      <div class="skill-card">HTML</div>
+      <div class="skill-card">CSS</div>
+      <div class="skill-card">JavaScript</div>
+      <div class="skill-card">Python</div>
+      <div class="skill-card">Game Development</div>
+      <div class="skill-card">GitHub</div>
     </div>
+  </section>
 
-    <button onclick="showMessage()">Contact Me!</button>
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <h2>Projects</h2>
 
-    <p id="message"></p>
+    <div class="projects-container">
 
-    <script src ="script.js"></script>
+      <div class="project-card">
+        <h3>Snake Game Pro</h3>
+        <p>
+          Advanced snake game built with Python Turtle.
+        </p>
+      </div>
+
+      <div class="project-card">
+        <h3>Breakout Pro</h3>
+        <p>
+          Arcade brick breaker game with physics and scoring.
+        </p>
+      </div>
+
+      <div class="project-card">
+        <h3>To-Do App</h3>
+        <p>
+          JavaScript productivity app with task management.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <h2>Contact Me</h2>
+
+    <p>Email: williamsamaechi999@gmail.com</p>
+
+    <a href="https://github.com/gentleboy4/snake-game-pro" target="_blank" class="btn">
+  Snake Game Repository
+  </a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Williams Amaechi. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
 
 </body>
 </html>
